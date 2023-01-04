@@ -1,6 +1,5 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" },
     { "source": "/cess/:match*", "destination": "https://mail1.pmailbox.org/cess/:match*" },
   ],
   "headers": [

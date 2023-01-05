@@ -85,7 +85,7 @@ function Home(): JSX.Element {
   const onBlur = () => {
     console.log(11)
   }
-  const choseItem = (e: React.ChangeEvent<HTMLDivElement>, value: DropItem) => {
+  const choseItem = (e: React.MouseEvent<HTMLDivElement, MouseEvent>, value: DropItem) => {
     e.preventDefault()
     e.stopPropagation()
     setShowDrop(false)
@@ -94,7 +94,7 @@ function Home(): JSX.Element {
     setUserList([...userList, value])
   }
   const deleteItem = (
-    e: React.ChangeEvent<HTMLDivElement>,
+    e: React.MouseEvent<SVGElement, MouseEvent>,
     value: DropItem
   ) => {
     e.preventDefault()
